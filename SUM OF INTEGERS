@@ -1,4 +1,4 @@
-Given two integers a and b, return the sum of the two integers without using the operators + and -.
+/////Given two integers a and b, return the sum of the two integers without using the operators + and -.
 class Solution {
     public int getSum(int a, int b) {
         while (b != 0) {
@@ -7,5 +7,31 @@ class Solution {
             b = c; 
         }
         return a;
+    }
+}
+
+
+///swap two numbers using only one operator
+class Main {
+    public static void main(String[] args) {
+        int a = 1, b = 2;
+        a=a^b;
+        b=a^b;
+        a=a^b;
+        System.out.println(a);
+        System.out.println(b);
+    }
+}
+
+////swap two numbers 
+class Main {
+    public static void main(String[] args) {
+        int a = 1, b = 2;
+        int temp;
+        temp=a;
+        a=b;
+        b=temp;
+        System.out.println(a);
+        System.out.println(b);
     }
 }
