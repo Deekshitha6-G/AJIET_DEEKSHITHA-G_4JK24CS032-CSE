@@ -35,3 +35,22 @@ class Main {
         System.out.println(b);
     }
 }
+
+//////min no in array;
+public class MinFinder {
+    public static void main(String[] args) {
+        int[] numbers = {10, 5, 8, 2, 7};
+        
+        // Step 1: Initialize min with the first element
+        int min = numbers[0];
+        
+        // Step 2: Loop through the remaining elements
+        for (int i = 1; i < numbers.length; i++) {
+            if (numbers[i] < min) {
+                min = numbers[i]; // Step 3: Update min if a smaller value is found
+            }
+        }
+        
+        System.out.println("Minimum number: " + min);
+    }
+}
