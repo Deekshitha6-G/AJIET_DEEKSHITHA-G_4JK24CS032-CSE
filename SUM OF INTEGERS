@@ -194,3 +194,21 @@ public class Main {
         System.out.println(list);
     }
 }
+//////
+import java.util.LinkedList;
+import java.util.Collections;
+
+class Main {
+    public static void main(String[] args) {
+        LinkedList<String> list = new LinkedList<>();
+
+        list.add("java");
+        list.add("python");
+        list.addFirst("reactjs");
+
+        Collections.sort(list);
+
+        System.out.println(list);
+        System.out.println(list.get(0));
+    }
+}
