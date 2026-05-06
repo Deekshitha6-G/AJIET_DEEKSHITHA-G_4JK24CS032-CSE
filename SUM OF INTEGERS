@@ -212,3 +212,20 @@ class Main {
         System.out.println(list.get(0));
     }
 }
+ //////////
+import java.util.HashMap;
+import java.util.Collections;
+
+class Main {
+    public static void main(String[] args) {
+        HashMap<Integer,String>   m=new HashMap<>();
+        m.put(101,"alice");
+        m.put(102,"bob");
+        System.out.println(m);
+        System.out.println(m.get(102));
+        m.remove(102);
+        System.out.println(m);
+        m.clear();
+        System.out.println(m);
+    }
+}
